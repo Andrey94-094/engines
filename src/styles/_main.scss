@@ -1,0 +1,43 @@
+.main {
+    &__img {
+        background-image: url("../../assets/images/menu/main_photo_2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 900px;
+        @media (max-width: 2000px) {
+            height: 800px;
+        }
+        @media (max-width: 1800px) {
+            height: 700px;
+        }
+        @media (max-width: 1600px) {
+            height: 650px;
+        }
+        @media (max-width: 1400px) {
+            height: 550px;
+        }
+        @media (max-width: 1300px) {
+            height: 500px;
+        }
+        @media (max-width:$desktop) {
+            height: 450px;
+        }
+        @media (max-width: $iPadPro) {
+            height: 400px;
+        }
+        @media (max-width: $tablet) {
+            height: 300px;
+        }
+        @media (max-width: $phone) {
+            height: 200px;
+        }
+    }
+    &__img-engine {
+        width: 14%;
+        transform: translate(202%, 160%);
+    }
+    &__img-engine-sh {
+        width: 14%;
+        transform: translate(310%, 160%);
+    }
+}

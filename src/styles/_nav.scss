@@ -1,0 +1,22 @@
+@import "./vars.scss";
+.nav {
+    &__phones {
+        display: flex;
+        flex-direction: column;
+    }
+    &__phone {
+        color: white;
+        font-size: 12spx;
+        padding: 0 1em;
+        z-index: 9px;
+        @media (max-width: $desktop) {
+            font-size: 12px;
+        }
+        @media (max-width: $iPadPro) {
+            font-size: 10px;
+        }
+        @media (max-width: $tablet) {
+            font-size: 8px;
+        }
+    }
+}

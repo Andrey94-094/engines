@@ -1,0 +1,24 @@
+.bottom-footer {
+    background: #d4dbe6;
+    &__container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    &__logo-copy {
+        font-size: 14px;
+        color: #014475;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

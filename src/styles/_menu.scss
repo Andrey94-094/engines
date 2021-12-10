@@ -1,0 +1,75 @@
+@import "./vars.scss";
+body {
+    overflow: hidden;
+    z-index: 999;
+}
+
+.menu {
+    height: 96px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/images/menu/lines-header.png), linear-gradient(to right, rgba(0, 95, 168) 0%, rgba(8, 53, 89) 100%);
+    @media (max-width: $iPadPro) {
+        height: 55px;
+    }
+    &__dropdown:hover .dropdown-child {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+    &__blocks {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        @media (max-width: $desktop) {
+            font-size: 12px;
+        }
+        @media (max-width: $iPadPro) {
+            display: none;
+        }
+    }
+    &__blocks-single {
+        background: rgba(255, 255, 255, .08);
+        margin: 0 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 96px;
+        transform: skew( -15deg);
+        cursor: pointer;
+        padding: 10px;
+    }
+     ::after,
+     ::before {
+        box-sizing: border-box;
+    }
+    &__blocks-img {
+        cursor: auto;
+        background: none;
+        color: black;
+        transform: skew(0deg);
+        padding: 0 5px;
+        height: 38px;
+        @media (max-width: $desktop) {
+            height: 25px;
+        }
+    }
+    &__blocks-deg {
+        color: white;
+        transform: skew(15deg);
+        line-height: normal;
+    }
+    &__blocks-degs {
+        color: white;
+        width: 200px;
+        transform: skew(15deg);
+        text-align: center;
+        @media (max-width: $desktop) {
+            width: 100px;
+        }
+    }
+}

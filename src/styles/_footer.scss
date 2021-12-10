@@ -1,0 +1,306 @@
+.footer {
+    display: block;
+    height: auto;
+    position: relative;
+    background: rgba(2, 64, 108, 1);
+    background: -webkit-linear-gradient(left, rgba(2, 64, 108, 1) 0%, rgba(31, 109, 164, 1) 25%, rgba(31, 109, 164, 1) 75%, rgba(2, 64, 108, 1) 100%);
+    background: linear-gradient(to right, rgba(2, 64, 108, 1) 0%, rgba(31, 109, 164, 1) 25%, rgba(31, 109, 164, 1) 75%, rgba(2, 64, 108, 1) 100%);
+    z-index: 1;
+    line-height: 1.5;
+    &__container {
+        z-index: 999;
+        width: auto;
+        padding: 0 15px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: $tablet) {
+            width: auto;
+        }
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        line-height: 1.15;
+        margin: 0 -15px;
+        width: 1140px;
+        height: auto;
+        @media (max-width: $desktop) {
+            width: 900px;
+        }
+        @media (max-width:$tablet) {
+            flex-direction: column;
+        }
+    }
+    &__block {
+        width: 33%;
+        padding: 28px 15px 0;
+        color: white;
+        @media (max-width: $desktop) {
+            padding: 20px 13px 0;
+        }
+        @media (max-width:$tablet) {
+            width: 90%
+        }
+    }
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 600px;
+        font-size: 22px;
+        margin-bottom: 12px;
+        @media (max-width: $desktop) {
+            font-size: 20px;
+        }
+    }
+    &__mailblock {
+        position: relative;
+        width: 95%;
+        z-index: 2;
+    }
+    &__data {
+        padding-bottom: 5px;
+        display: flex;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        @media (max-width: $desktop) {
+            font-size: 14px;
+        }
+        @media (max-width: $iPadPro) {
+            font-size: 12px;
+        }
+    }
+    &__checkbox {
+        display: block;
+        border-radius: 3px;
+        width: 16px;
+        height: 16px;
+        margin: 5px 4px 0 0;
+        border: 1px solid #c3c3c3;
+        background: linear-gradient(#fff, #e6e6e6);
+        box-shadow: 0 1px 1px rgb(0 0 0 / 5%), inset -1px -1px #fff, inset 1px -1px #fff;
+        cursor: pointer;
+    }
+    &__input-checkbox {
+        box-sizing: border-box;
+        padding: 0;
+        position: absolute;
+        margin: 0;
+    }
+    &__href {
+        color: #84b6d8;
+        text-decoration: none;
+    }
+    &__href:hover {
+        color: #84b6d8;
+        text-decoration: underline;
+    }
+    &__text {
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 6px 50px 6px 12px;
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 14px;
+        display: block;
+        width: 100%;
+        outline: 0;
+        color: #fff;
+        margin-bottom: 5px;
+        @media (max-width: $desktop) {
+            font-size: 12px;
+        }
+    }
+    &__submit {
+        background: #f9bc28;
+        border-radius: 8px;
+        color: #014475;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        width: 38px;
+        height: 27px;
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        border: 0;
+        cursor: pointer;
+        @media (max-width: $desktop) {
+            font-size: 10px;
+        }
+    }
+    &__block-img {
+        background-image: url(../../assets/images/footer/log.jpg);
+        background-repeat: no-repeat;
+    }
+    &__block-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+        @media (max-width: $desktop) {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: $iPadPro) {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    }
+    &__youtube-width {
+        height: 150px;
+    }
+    &__youtube {
+        display: block;
+        width: 67px;
+        height: 67px;
+        background: url(../../assets/images/footer/play.png) no-repeat;
+        transition: all 250ms;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    &__youtube:hover {
+        transform: scale(1.1);
+    }
+    &__other {
+        padding-top: 20px;
+        position: relative;
+    }
+    &__other-a {
+        position: relative;
+        padding: 6px 0;
+        width: 70%;
+    }
+    &__other-href {
+        text-decoration: none;
+        color: white;
+    }
+    &__other-href:hover {
+        text-decoration: underline;
+        color: blue;
+        @media (max-width: $iPadPro) {
+            font-size: 12px;
+        }
+    }
+    &__other-href::after {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 9px 0 9px 12px;
+        border-color: transparent transparent transparent #f9bc28;
+        content: "";
+        @media (max-width: $desktop) {
+            top: 10px;
+            right: -10px;
+        }
+    }
+    &__other::after {
+        display: block;
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url(../../assets/images/footer/websites.png) no-repeat;
+        background-size: 80%;
+        width: 130px;
+        height: 133px;
+        @media (max-width: $desktop) {
+            width: 100px;
+        }
+        @media (max-width: $iPadPro) {
+            display: none;
+        }
+    }
+    &__row-menu {
+        width: 100%;
+        display: flex;
+        margin: 0 -15px;
+        position: relative;
+        z-index: 2;
+        color: #014475;
+        height: 103px;
+        padding-top: 20px;
+        @media (max-width: $tablet) {
+            width: auto;
+        }
+    }
+    &__logo {
+        flex: 0 0 24%;
+    }
+    &__logo-img {
+        width: 166px !important;
+        padding-top: 15px;
+        @media (max-width: $tablet) {
+            padding-right: 30px;
+            ;
+        }
+    }
+    &__submenu-list {
+        display: block;
+        list-style: none;
+        padding: 15px 0;
+        justify-content: center;
+    }
+    &__submenu-list-link {
+        text-decoration: none;
+        background-color: transparent;
+        color: #014475;
+    }
+    &__menu {
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        height: 110px;
+        padding: 2px 15px;
+        color: #014475;
+        @media (max-width: $iPadPro) {
+            font-size: 10px;
+        }
+        @media (max-width:$tablet) {
+            display: none;
+        }
+    }
+    &__menu-item {
+        height: 100%;
+        background: rgba(158, 174, 186, .3);
+        padding: 40px 20px;
+        margin-left: 5px;
+        display: inline-block;
+        transform: skew( -15deg);
+    }
+    &__menu-href {
+        color: #0056b3
+    }
+    &__menu-href:hover {
+        color: #014475
+    }
+}
+
+.footer::after {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 154px;
+    content: "";
+    display: block;
+    background: url(../../assets/images/footer/bgr.png) no-repeat;
+    background-position: center;
+    @media (max-width: $desktop) {}
+}

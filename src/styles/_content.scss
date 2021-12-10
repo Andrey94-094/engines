@@ -1,0 +1,145 @@
+.content {
+    background-image: url("../../assets/images/navMenu/bg-1.jpg");
+    background-size: cover;
+    background-size: auto !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    &__container {
+        padding: 0 10%;
+        @media (max-width: $desktop) {
+            width: 1000px;
+            padding: 0;
+        }
+        @media (max-width: $iPadPro) {
+            width: 800px;
+        }
+    }
+    &__catalog {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto 0;
+        cursor: pointer;
+        @media (max-width: $phone) {
+            flex-direction: column;
+        }
+    }
+    &__catalog-img {
+        padding: 0 15px 20px;
+        // display: block;
+        @media (max-width: $iPadPro) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width:$phone) {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &__catalog-pad {
+        margin: 0 auto;
+    }
+    &__item-title {
+        height: 80px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-top: 2px solid #acb9cf;
+        font-size: 16px;
+        padding-top: 30px;
+        text-align: center;
+        color: #333333;
+        @media (max-width: $desktop) {
+            font-size: 12px;
+        }
+        @media (max-width: $iPadPro) {
+            font-size: 10px;
+            padding-top: 20px;
+            height: 50px;
+        }
+        @media (max-width: $tablet) {
+            font-size: 8px;
+        }
+    }
+    &__item-title-p {
+        padding-top: 5px;
+    }
+    &__table {
+        background: transparent;
+        display: flex;
+        vertical-align: middle
+    }
+    &__table-gray {
+        background: transparent;
+        display: flex;
+        background-color: #bdbdbd;
+    }
+    &__table-cell {
+        width: 100%;
+        font-weight: normal;
+        padding: 5px 3px;
+        color: #333333;
+        font-size: 14px;
+        line-height: 16px;
+        @media (max-width: $tablet) {
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
+    &__price {
+        cursor: pointer;
+        width: 100%;
+        padding: 7px 0;
+        background-color: #ADB9CF;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        bottom: -25px;
+        transition: background-color .3s;
+        margin-bottom: 0;
+        @media (max-width: $tablet) {
+            font-size: 12px;
+        }
+    }
+    &__scale {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        transition: 0.5s;
+        margin-bottom: 15px;
+        @media (max-width: $phone) {
+            margin: 0 auto;
+            width: 150px;
+        }
+    }
+    &__price-a {
+        text-decoration: none;
+        color: #333;
+    }
+    &__scale:hover {
+        transform: scale(1.05);
+    }
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.col:hover {
+    .content__price {
+        background-color: rgb(219, 173, 19);
+    }
+    .content__item-title {
+        border-top: 2px solid rgb(219, 173, 19);
+    }
+}

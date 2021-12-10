@@ -1,0 +1,37 @@
+.bt_modal {
+    &__detail {
+        display: flex;
+    }
+    &__detail-img {
+        height: 0%;
+        margin-right: 80px;
+        @media (max-width: $iPadPro) {
+            display: none;
+        }
+    }
+    &__text {
+        text-align: justify;
+    }
+}
+
+.stretched-link::after {
+    position: relative;
+}
+
+.modal-body {
+    padding: 5% 20%;
+    @media (max-width: $iPadPro) {
+        padding: 2% 3%;
+    }
+}
+
+.modal-dialog {
+    max-width: 100%;
+}
+
+.row-cols-2>* {
+    width: 50%;
+    @media (max-width: $iPadPro) {
+        width: 100%;
+    }
+}
